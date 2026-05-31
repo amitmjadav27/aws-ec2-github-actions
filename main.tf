@@ -28,6 +28,9 @@ resource "aws_instance" "myec2" {
   instance_type          = "t2.micro"
   vpc_security_group_ids = [aws_security_group.ec2_sg.id]
 
+  key_name = "amitmjadav008"
+
+
   tags = {
     Name = "GitHubActions-EC2"
   }
